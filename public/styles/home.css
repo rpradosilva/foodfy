@@ -45,3 +45,21 @@
     gap: var(--lg);
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
+
+@media (max-width: 1000px) {
+    .banner {
+        flex-direction: column;
+        margin: 0 var(--lg);
+        padding: var(--xl);
+    }
+    .banner-text {
+        text-align: center;
+    }
+    .banner__image {
+        align-self: center;
+        margin: var(--lg) 0 0 0;
+    }
+    .home-recipes {
+        margin: var(--xl) var(--lg) calc(var(--xl) * 2) var(--lg);
+    }
+}

@@ -1,25 +1,32 @@
 .dark {
-    --highlight: hsl(5, 80%, 92%);
-    --default: hsl(0, 0%, 7%);
-    --default-40: hsl(0, 0%, 40%);
-    --default-60: hsl(0, 0%, 60%);
-    --default-80: hsl(0, 0%, 80%);
-    --default-100: hsl(0, 0%, 100%);
+    --highlight: hsla(0, 0%, 20%, .5);
+    --default: hsl(0, 0%, 100%);
+    --default-40: hsl(0, 0%, 60%);
+    --default-60: hsl(0, 0%, 40%);
+    --default-80: hsla(0, 0%, 20%, .15);
+    --default-100: hsl(0, 0%, 0%);
+}
+
+.dark img {
+    filter: grayscale(30%);
+}
+
+.dark .navbar-logo__image {
+    filter: invert(100%);
 }
 
 .navbar-theme {
     background: var(--default-40);
-    border-top-left-radius: var(--sm);
-    border-top-right-radius: 0;
-    border-bottom-left-radius: var(--sm);
-    border-bottom-right-radius: 0;
+    border-top-right-radius: var(--sm);
+    border-bottom-right-radius: var(--sm);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     color: var(--default-100);
     cursor: pointer;
     font-size: var(--md);
-    text-align: center;
-    padding: var(--md);
+    left: 0;
+    padding: calc(var(--sm) * 1.4);
     position: fixed;
-    right: 0;
+    text-align: center;
     top: 20%;
+    z-index: 1;
 }

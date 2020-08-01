@@ -1,0 +1,29 @@
+.about {
+    margin: 0 0 var(--xl) 0;
+}
+
+.about:last-of-type {
+    margin: 0 0 calc(var(--xl) * 2) 0;
+}
+
+.about__title {
+    color: var(--default);
+    font-size: var(--lg);
+    font-weight: 700;
+}
+
+.about__desc {
+    color: var(--default-40);
+    font-size: var(--md);
+    line-height: 1.5;
+    margin: var(--md) 0;
+}
+
+@media (max-width: 1000px) {
+    .about {
+        margin: 0 var(--lg) var(--xl) var(--lg);
+    }
+    .about:last-of-type {
+        margin: 0 var(--lg) calc(var(--xl) * 2) var(--lg);
+    }
+}

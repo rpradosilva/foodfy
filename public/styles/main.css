@@ -2,12 +2,13 @@
 @import "reset.css";
 @import "fontawesome.css";
 @import "nav.css";
-@import "home.css";
-@import "card.css";
 @import "dark-mode.css";
+@import "card.css";
+@import "home.css";
+@import "about.css";
+@import "recipes.css";
 :root {
     --highlight: hsl(5, 80%, 92%);
-    --gradient: linear-gradient(to top, #feada6 0%, #f5efef 100%);
     --default: hsl(0, 0%, 7%);
     --default-40: hsl(0, 0%, 40%);
     --default-60: hsl(0, 0%, 60%);
@@ -40,24 +41,6 @@ body {
 
 .footer__copy {
     color: var(--default-40);
-    font-size: var(--md);
+    font-size: calc(var(--md) / 1.2);
     text-align: center;
-}
-
-@media (max-width: 1000px) {
-    .banner {
-        flex-direction: column;
-        margin: 0 var(--md);
-        padding: var(--xl);
-    }
-    .banner-text {
-        text-align: center;
-    }
-    .banner__image {
-        align-self: center;
-        margin: var(--md) 0 0 0;
-    }
-    .home-recipes {
-        margin: var(--xl) var(--md) calc(var(--xl) * 2) var(--md);
-    }
 }
