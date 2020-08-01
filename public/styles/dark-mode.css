@@ -1,0 +1,25 @@
+.dark {
+    --highlight: hsl(5, 80%, 92%);
+    --default: hsl(0, 0%, 7%);
+    --default-40: hsl(0, 0%, 40%);
+    --default-60: hsl(0, 0%, 60%);
+    --default-80: hsl(0, 0%, 80%);
+    --default-100: hsl(0, 0%, 100%);
+}
+
+.navbar-theme {
+    background: var(--default-40);
+    border-top-left-radius: var(--sm);
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--sm);
+    border-bottom-right-radius: 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: var(--default-100);
+    cursor: pointer;
+    font-size: var(--md);
+    text-align: center;
+    padding: var(--md);
+    position: fixed;
+    right: 0;
+    top: 20%;
+}

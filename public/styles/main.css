@@ -1,7 +1,13 @@
-@import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "reset.css";
+@import "fontawesome.css";
+@import "nav.css";
+@import "home.css";
+@import "card.css";
+@import "dark-mode.css";
 :root {
     --highlight: hsl(5, 80%, 92%);
+    --gradient: linear-gradient(to top, #feada6 0%, #f5efef 100%);
     --default: hsl(0, 0%, 7%);
     --default-40: hsl(0, 0%, 40%);
     --default-60: hsl(0, 0%, 60%);
@@ -21,116 +27,10 @@ body {
     font-weight: 400;
 }
 
-.navbar {
-    align-items: center;
-    display: flex;
-    margin: 0 auto;
-    max-width: var(--wrapper);
-    justify-content: space-between;
-    padding: var(--xl) var(--lg);
-}
-
-.navbar-logo__image {
-    cursor: pointer;
-    max-width: 90px;
-}
-
-.nav__group {
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.nav__link {
-    background: transparent;
-    border: calc(var(--xs) / 4) dashed var(--default-80);
-    border-radius: var(--sm);
-    color: var(--default-40);
-    cursor: pointer;
-    padding: calc(var(--sm) + var(--xs)) var(--md);
-}
-
-.nav__link:hover {
-    background: var(--highlight);
-    border: calc(var(--xs) / 4) solid var(--highlight);
-    color: var(--default);
-    transition: 250ms;
-}
-
 .content {
     margin: 0 auto;
     max-width: var(--wrapper);
     justify-content: space-between;
-}
-
-.banner {
-    background: var(--highlight);
-    border-radius: var(--md);
-    display: flex;
-    justify-content: space-around;
-}
-
-.banner-text {
-    align-self: center;
-}
-
-.banner-text__title {
-    color: var(--default);
-    font-size: var(--xl);
-    font-weight: 700;
-}
-
-.banner-text__desc {
-    color: var(--default-40);
-    font-size: var(--md);
-    line-height: 1.5;
-    margin: var(--xs) 0 0 0;
-    max-width: 400px;
-}
-
-.banner__image {
-    align-self: flex-end;
-    margin: 66px 0 0 0;
-    max-height: 300px;
-}
-
-.home-recipes {
-    margin: var(--xl) 0 calc(var(--xl) * 2) 0;
-}
-
-.home-recipes__title {
-    color: var(--default);
-    font-size: var(--lg);
-    font-weight: 700;
-    margin: 0 0 var(--md) 0;
-}
-
-.home-recipes__grid {
-    display: grid;
-    gap: var(--lg);
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.recipe__card {
-    display: flex;
-    flex-direction: column;
-}
-
-.recipe__image img {
-    border-radius: var(--sm);
-    max-width: 100%;
-}
-
-.recipe__title {
-    color: var(--default);
-    font-size: var(--md);
-    font-weight: 700;
-    padding: var(--md) 0 var(--xs) 0;
-}
-
-.reciple__desc {
-    color: var(--default-40);
-    font-size: calc(var(--md) / 1.2);
 }
 
 .footer {

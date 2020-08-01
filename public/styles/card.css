@@ -1,0 +1,21 @@
+.recipe__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe__image img {
+    border-radius: var(--sm);
+    max-width: 100%;
+}
+
+.recipe__title {
+    color: var(--default);
+    font-size: var(--md);
+    font-weight: 700;
+    padding: var(--md) 0 var(--xs) 0;
+}
+
+.reciple__desc {
+    color: var(--default-40);
+    font-size: calc(var(--md) / 1.2);
+}
