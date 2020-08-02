@@ -15,7 +15,7 @@
     padding: var(--md) 0 var(--xs) 0;
 }
 
-.reciple__desc {
+.recipe__desc {
     color: var(--default-40);
     font-size: calc(var(--md) / 1.2);
 }

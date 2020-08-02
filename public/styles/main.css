@@ -4,6 +4,7 @@
 @import "nav.css";
 @import "dark-mode.css";
 @import "card.css";
+@import "modal.css";
 @import "home.css";
 @import "about.css";
 @import "recipes.css";
@@ -14,6 +15,10 @@
     --default-60: hsl(0, 0%, 60%);
     --default-80: hsl(0, 0%, 80%);
     --default-100: hsl(0, 0%, 100%);
+    --modal: #ffffff;
+    --modal-overlay: rgba(0, 0, 0, .7);
+    --modal-close: hsl(5, 80%, 92%);
+    --modal-close-btn: hsl(5, 80%, 72%);
     --xs: 4px;
     --sm: 8px;
     --md: 16px;
