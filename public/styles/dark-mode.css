@@ -3,7 +3,7 @@
     --default: hsl(0, 0%, 100%);
     --default-40: hsl(0, 0%, 60%);
     --default-60: hsl(0, 0%, 40%);
-    --default-80: hsla(0, 0%, 20%, .15);
+    --default-80: hsla(0, 0%, 20%, .5);
     --default-100: hsl(0, 0%, 0%);
 }
 

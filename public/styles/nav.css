@@ -26,7 +26,6 @@
 .nav__group {
     align-items: center;
     display: flex;
-    gap: var(--md);
 }
 
 .nav-toggle__item {
@@ -42,6 +41,7 @@
     display: block;
     font-size: calc(var(--lg) / 1.6);
     padding: calc(var(--sm) + var(--xs)) var(--md);
+    margin: 0 var(--sm);
 }
 
 .nav-toggle__link,

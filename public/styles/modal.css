@@ -47,6 +47,7 @@
     font-weight: 700;
     padding: var(--md) calc(var(--md) * 1.2);
     text-align: center;
+    cursor: pointer;
 }
 
 @media (max-width: 1000px) {

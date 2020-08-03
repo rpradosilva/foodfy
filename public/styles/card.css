@@ -1,6 +1,7 @@
 .recipe__card {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .recipe__image img {
