@@ -9,11 +9,8 @@
 </div>  
 
 # :pushpin: Proposal
-### Create a "portfolio" to Rocketseat Courses
+### Create a **culinary recipe website** with some basic features.
 
-> About page 
-
-> Recipes page with modal and dynamic data
 
 <div align="center">
     <img src=".github/print.png" width="100%"/>
@@ -22,19 +19,29 @@
 
 # :rocket: Features
 
+## Main features
+
 * About page
 * Recipes page
   *  Modal (dynamic data)
+
+## Plus features
 * Fully **responsive**
 * **Dark mode** theme
 
 # :runner: Getting Started
 
-Clone repository:
+### **1. Clone repository**
 
 ```git clone git@github.com:rpradosilva/foodfy.git```
 
-### **Run with live sever or in your browser**.
+### **2. Install dependencies**
+
+```npm install```
+
+### **3. Run project**
+
+```npm start```
 
 ## :memo: License
 
