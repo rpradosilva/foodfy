@@ -2,6 +2,7 @@ const express = require("express")
 const server = express()
 const port = 5000
 const nunjucks = require("nunjucks")
+const recipesList = require("./data")
 
 
 server.set("view engine", "njk")
@@ -14,15 +15,15 @@ server.listen(port, function() {
 
 
 server.get("/", function(req, res) {
-    return res.render("index")
+    return res.render("index", { item: recipesList, pageId: "home", pageName: "Home" })
 })
 
 server.get("/about", function(req, res) {
-    return res.render("about")
+    return res.render("about", { pageId: "about", pageName: "Sobre" })
 })
 
 server.get("/recipes", function(req, res) {
-    return res.render("recipes")
+    return res.render("recipes", { item: recipesList, pageId: "recipes", pageName: "Receitas" })
 })
 
 
