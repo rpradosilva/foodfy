@@ -13,14 +13,24 @@
   [![Getting-Started](https://img.shields.io/badge/-▶%20Getting%20Started-d54f44)](#getting-started)
   ___
 
-
-  [![GitHub](https://img.shields.io/github/license/rpradosilva/foodfy?color=lightgrey)](/LICENSE)
   <div style="margin: 30px;"></div>
   
 </div>  
 
 # About The Project
-### Create a **culinary recipe website** with some basic features.
+### Create a **culinary recipe website**.
+The project goals learning frontend and backend technologies, like:
+- **Frontend**
+  - HTML
+  - CSS
+  - Javascript
+- **Backend**
+  - NodeJs
+  - NPM
+  - Create server (*Express*)
+    - Use routes
+    - Use dynamic data
+  - Template Engine (*Nunjucks*)
 
 <div align="center">
     <img src=".github/print.png" width="100%" />
@@ -29,37 +39,47 @@
 # Features
 
 ### Main features
-
-* About page
-* Recipes page
-* Recipe description page
-  * Show/hide sections
+- Template structures to pages
+- Styling with `CSS grid` and `flexbox`
+- Routes created by the recipe data
+- Show/hide sections in the description recipe page 
 
 ### Plus features
-* Fully **responsive**
-* **Dark mode** theme
+- Styling CSS with `BEM CSS` convention
+- Fully **responsive** layout
+- **Dark mode**
 <div style="margin: 30px;"></div>
 
 # Getting Started
 
-### **1. Clone repository**
+### Prerequisites
+The [NodeJS](https://nodejs.org/) is **required** to be able to run this project. Install in your machine and go to the next steps.
+
+### Installation
+
+**1.** Clone repository
 
 ```git clone git@github.com:rpradosilva/foodfy.git```
 
-### **2. Install dependencies**
+**2.** Install NPM Packages
 
 ```npm install```
 
-### **3. Run project**
+**3.** Run project
 
 ```npm start```
+
+
 <div style="margin: 30px;"></div>
 
 # License
 
 This project is protected by the MIT license. See the file [LICENSE](/LICENSE) for more details.
-<br><br>
+<br>
+
+[![GitHub](https://img.shields.io/github/license/rpradosilva/foodfy?color=lightgrey)](/LICENSE)
+<div style="margin: 30px;"></div>
 
 ---
 
-Made with ♥ by [Rafael Prado](http://rprado.design)
+### **Developed by** [<img alt="Logo RPrado" src=".github/logo-rprado.png" width="91px" />](http://rprado.design)
