@@ -3,7 +3,6 @@
     <img alt="Logo" src=".github/logo.png" width="91px" /><br>
     
 [![GitHub](https://img.shields.io/github/license/rpradosilva/foodfy?color=d54f44)](/LICENSE)
-[![LivePreview](https://img.shields.io/badge/-Live%20Preview-d54f44)](https://rpradosilva.github.io/foodfy/)
 
 <br>
 </div>  
@@ -23,7 +22,6 @@
 
 * About page
 * Recipes page
-  *  Modal (dynamic data)
 
 ## Plus features
 * Fully **responsive**

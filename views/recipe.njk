@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content %}
-    <section class="recipe__page">
+    <section class="recipe__header">
         <div class="recipe__banner">
             <img src="{{ item.image }}" alt="Recipe {{ item.title }}">
         </div>
@@ -18,7 +18,7 @@
             </p>
         </div>
 
-        <section class="recipe__page">
+        <section class="recipe__section">
             <div class="recipe__section--header">
                 <h1 class="recipe__section--title">
                     Ingredientes
@@ -27,17 +27,17 @@
                     Esconder
                 </div>
             </div>
-            <p class="recipe__section--text">
+            <div class="recipe__section--text">
                 <ul class="recipe__list">
                     {% for ingredient in ingredients %}
                         <li class="recipe__list--item">
                             {{ ingredient }}</li>
                     {% endfor %}
                 </ul>
-            </p>
+            </div>
         </section>
 
-        <section class="recipe__page">
+        <section class="recipe__section">
             <div class="recipe__section--header">
                 <h1 class="recipe__section--title">
                     Modo de preparo
@@ -46,18 +46,18 @@
                     Esconder
                 </div>
             </div>
-            <p class="recipe__section--text">
+            <div class="recipe__section--text">
                 <ol class="recipe__list--ol">
                     {% for preparation in preparations %}
                         <li class="recipe__list--step">
                             {{ preparation }}</li>
                     {% endfor %}
                 </ol>
-            </p>
+            </div>
         </section>
 
         {% if item.information %}
-            <section class="recipe__page">
+            <section class="recipe__section">
                 <div class="recipe__section--header">
                     <h1 class="recipe__section--title">
                         Informações adicionais
@@ -66,11 +66,14 @@
                         Esconder
                     </div>
                 </div>
-                <p class="recipe__section--text">
+                <div class="recipe__section--text">
                     {{ item.information }}
-                </p>
+                </div>
             </section>
         {% endif %}
 
     </section>
+{% endblock %}
+{% block scripts %}
+    <script src="/scripts/hide.js"></script>
 {% endblock %}

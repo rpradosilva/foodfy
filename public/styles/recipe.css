@@ -1,8 +1,10 @@
-.recipe__page {
+.recipe__section,
+.recipe__header {
     margin: 0 0 calc(var(--xl) * 1.5) 0;
 }
 
-.recipe__page:last-of-type {
+.recipe__section:last-of-type,
+.recipe__section--header:last-of-type {
     margin: 0 0 calc(var(--xl) * 2) 0;
 }
 
@@ -56,6 +58,10 @@
     text-transform: uppercase;
 }
 
+.recipe__section--text.recipe__section--hide {
+    display: none;
+}
+
 .recipe__section--text {
     color: var(--default-40);
     font-size: var(--md);
@@ -97,10 +103,13 @@
 }
 
 @media (max-width: 1000px) {
-    .recipe__page {
+    .recipe__section--header {
         margin: 0 var(--lg) var(--xl) var(--lg);
     }
-    .recipe__page:last-of-type {
+    .recipe__section {
+        margin: 0 var(--lg) var(--xl) var(--lg);
+    }
+    .recipe__section:last-of-type {
         margin: 0 var(--lg) calc(var(--xl) * 2) var(--lg);
     }
     .recipe__section--header {
