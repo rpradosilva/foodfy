@@ -104,19 +104,22 @@
 }
 
 @media (max-width: 1000px) {
-    .recipe__section--header {
+    .recipe__banner {
         margin: 0 var(--lg) var(--xl) var(--lg);
     }
-    .recipe__section {
-        margin: 0 var(--lg) var(--xl) var(--lg);
-    }
+    .recipe__section--header,
+    .recipe__section,
+    .recipe__infos,
     .recipe__section:last-of-type {
-        margin: 0 var(--lg) calc(var(--xl) * 2) var(--lg);
+        margin: var(--xl) var(--lg) 0 var(--lg);
+    }
+    .recipe__section--title {
+        text-align: center;
     }
     .recipe__section--header {
         flex-direction: column;
     }
     .recipe__section--button {
-        margin: var(--md);
+        margin: var(--md) 0 var(--xs) 0;
     }
 }
