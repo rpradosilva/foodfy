@@ -3,90 +3,22 @@
 {% block content %}
     <section class="recipes">
         <div class="recipes__grid">
-            <div class="recipe__card">
-                <div class="recipe__image">
-                    <img src="/assets/burger.png" alt="Recipe Image">
+            {% for item in items %}
+                <div class="recipe__card">
+                    <div class="recipe__image">
+                        <img src="{{ item.image }}" alt="Recipe {{ item.title }}">
+                    </div>
+                    <h2 class="recipe__title">{{ item.title }}</h2>
+                    <p class="recipe__desc">
+                        por
+                        {{ item.author }}
+                    </p>
                 </div>
-                <h2 class="recipe__title">Triplo bacon burger</h2>
-                <p class="recipe__desc">por Jorge Relato</p>
-            </div>
-            <div class="recipe__card">
-                <div class="recipe__image">
-                    <img src="/assets/pizza.png" alt="Recipe Image">
-                </div>
-                <h2 class="recipe__title">Pizza 4 estações</h2>
-                <p class="recipe__desc">por Fabiana Melo</p>
-            </div>
-            <div class="recipe__card">
-                <div class="recipe__image">
-                    <img src="/assets/espaguete.png" alt="Recipe Image">
-                </div>
-                <h2 class="recipe__title">Espaguete ao alho</h2>
-                <p class="recipe__desc">por Júlia Kinoto</p>
-            </div>
-            <div class="recipe__card">
-                <div class="recipe__image">
-                    <img src="/assets/lasanha.png" alt="Recipe Image">
-                </div>
-                <h2 class="recipe__title">Lasanha mac n’ cheese</h2>
-                <p class="recipe__desc">por Juliano Vieira</p>
-            </div>
-            <div class="recipe__card">
-                <div class="recipe__image">
-                    <img src="/assets/doce.png" alt="Recipe Image">
-                </div>
-                <h2 class="recipe__title">Docinhos pão-do-céu</h2>
-                <p class="recipe__desc">por Ricardo Golvea</p>
-            </div>
-            <div class="recipe__card">
-                <div class="recipe__image">
-                    <img src="/assets/asinhas.png" alt="Recipe Image">
-                </div>
-                <h2 class="recipe__title">Asinhas de frango ao barbecue</h2>
-                <p class="recipe__desc">por Vania Steroski</p>
-            </div>
-            <div class="recipe__card">
-                <div class="recipe__image">
-                    <img src="/assets/burger.png" alt="Recipe Image">
-                </div>
-                <h2 class="recipe__title">Triplo bacon burger</h2>
-                <p class="recipe__desc">por Jorge Relato</p>
-            </div>
-            <div class="recipe__card">
-                <div class="recipe__image">
-                    <img src="/assets/pizza.png" alt="Recipe Image">
-                </div>
-                <h2 class="recipe__title">Pizza 4 estações</h2>
-                <p class="recipe__desc">por Fabiana Melo</p>
-            </div>
-            <div class="recipe__card">
-                <div class="recipe__image">
-                    <img src="/assets/espaguete.png" alt="Recipe Image">
-                </div>
-                <h2 class="recipe__title">Espaguete ao alho</h2>
-                <p class="recipe__desc">por Júlia Kinoto</p>
-            </div>
-            <div class="recipe__card">
-                <div class="recipe__image">
-                    <img src="/assets/lasanha.png" alt="Recipe Image">
-                </div>
-                <h2 class="recipe__title">Lasanha mac n’ cheese</h2>
-                <p class="recipe__desc">por Juliano Vieira</p>
-            </div>
-            <div class="recipe__card">
-                <div class="recipe__image">
-                    <img src="/assets/doce.png" alt="Recipe Image">
-                </div>
-                <h2 class="recipe__title">Docinhos pão-do-céu</h2>
-                <p class="recipe__desc">por Ricardo Golvea</p>
-            </div>
-            <div class="recipe__card">
-                <div class="recipe__image">
-                    <img src="/assets/asinhas.png" alt="Recipe Image">
-                </div>
-                <h2 class="recipe__title">Asinhas de frango ao barbecue</h2>
-                <p class="recipe__desc">por Vania Steroski</p>
-            </div>
+            {% endfor %}
         </div>
     </section>
+{% endblock %}
+
+{% block scripts %}
+    <script src="/scripts/cards.js"></script>
 {% endblock %}

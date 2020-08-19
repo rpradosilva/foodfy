@@ -1,0 +1,76 @@
+{% extends "layout.njk" %}
+
+{% block title %}
+    <title>{{ item.title }}
+        - Foodfy</title>
+{% endblock %}
+
+{% block content %}
+    <section class="recipe__page">
+        <div class="recipe__banner">
+            <img src="{{ item.image }}" alt="Recipe {{ item.title }}">
+        </div>
+        <div class="recipe__infos">
+            <h2 class="recipe__infos--title">{{ item.title }}</h2>
+            <p class="recipe__infos--desc">
+                por
+                {{ item.author }}
+            </p>
+        </div>
+
+        <section class="recipe__page">
+            <div class="recipe__section--header">
+                <h1 class="recipe__section--title">
+                    Ingredientes
+                </h1>
+                <div class="recipe__section--button">
+                    Esconder
+                </div>
+            </div>
+            <p class="recipe__section--text">
+                <ul class="recipe__list">
+                    {% for ingredient in ingredients %}
+                        <li class="recipe__list--item">
+                            {{ ingredient }}</li>
+                    {% endfor %}
+                </ul>
+            </p>
+        </section>
+
+        <section class="recipe__page">
+            <div class="recipe__section--header">
+                <h1 class="recipe__section--title">
+                    Modo de preparo
+                </h1>
+                <div class="recipe__section--button">
+                    Esconder
+                </div>
+            </div>
+            <p class="recipe__section--text">
+                <ol class="recipe__list--ol">
+                    {% for preparation in preparations %}
+                        <li class="recipe__list--step">
+                            {{ preparation }}</li>
+                    {% endfor %}
+                </ol>
+            </p>
+        </section>
+
+        {% if item.information %}
+            <section class="recipe__page">
+                <div class="recipe__section--header">
+                    <h1 class="recipe__section--title">
+                        Informações adicionais
+                    </h1>
+                    <div class="recipe__section--button">
+                        Esconder
+                    </div>
+                </div>
+                <p class="recipe__section--text">
+                    {{ item.information }}
+                </p>
+            </section>
+        {% endif %}
+
+    </section>
+{% endblock %}

@@ -4,10 +4,10 @@
 @import "nav.css";
 @import "dark-mode.css";
 @import "card.css";
-@import "modal.css";
 @import "home.css";
 @import "about.css";
 @import "recipes.css";
+@import "recipe.css";
 :root {
     --highlight: hsl(5, 80%, 92%);
     --default: hsl(0, 0%, 7%);
