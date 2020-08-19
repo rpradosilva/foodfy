@@ -28,6 +28,7 @@
 ### Plus features
 * Fully **responsive**
 * **Dark mode** theme
+<br><br>
 
 # :runner: Getting Started
 
@@ -42,10 +43,12 @@
 ### **3. Run project**
 
 ```npm start```
+<br><br>
 
-## :memo: License
+# :memo: License
 
 This project is protected by the MIT license. See the file [LICENSE](/LICENSE) for more details.
+<br><br>
 
 ---
 
