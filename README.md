@@ -6,13 +6,13 @@
   <img alt="Logo" src=".github/logo.png" width="91px" />
   
   ___
-  <div style="margin: 15px;"></div>
+  <div style="margin: 12px;"></div>
 
   [![About-the-project](https://img.shields.io/badge/-▶%20About-d54f44)](#about-the-project)
   [![Features](https://img.shields.io/badge/-▶%20Features-d54f44)](#features)
   [![Getting-Started](https://img.shields.io/badge/-▶%20Getting%20Started-d54f44)](#getting-started)
   ___
-  <div style="margin: 15px;"></div>
+
 
   [![GitHub](https://img.shields.io/github/license/rpradosilva/foodfy?color=lightgrey)](/LICENSE)
   <div style="margin: 30px;"></div>
