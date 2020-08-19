@@ -4,13 +4,18 @@
   <br><br>
 
   <img alt="Logo" src=".github/logo.png" width="91px" />
-  <br><br>
-    
-  [![Proposal](https://img.shields.io/badge/-:speech_balloon:%20Proposal-d54f44)](#pushpin-proposal)
-  [![Features](https://img.shields.io/badge/-Features-d54f44)](#rocket-features)
-  [![Getting-Started](https://img.shields.io/badge/-Getting%20Started-d54f44)](#runner-getting-started)
-  [![GitHub](https://img.shields.io/github/license/rpradosilva/foodfy?color=d54f44)](/LICENSE)
-  <br><br>
+  
+  ___
+  <div style="margin: 15px;"></div>
+
+  [![About-the-project](https://img.shields.io/badge/-▶%20About-d54f44)](#about-the-project)
+  [![Features](https://img.shields.io/badge/-▶%20Features-d54f44)](#features)
+  [![Getting-Started](https://img.shields.io/badge/-▶%20Getting%20Started-d54f44)](#getting-started)
+  ___
+  <div style="margin: 15px;"></div>
+
+  [![GitHub](https://img.shields.io/github/license/rpradosilva/foodfy?color=lightgrey)](/LICENSE)
+  <div style="margin: 30px;"></div>
   
 </div>  
 
@@ -21,7 +26,7 @@
     <img src=".github/print.png" width="100%" />
 </div>
 
-# :rocket: Features
+# Features
 
 ### Main features
 
@@ -33,9 +38,9 @@
 ### Plus features
 * Fully **responsive**
 * **Dark mode** theme
-<br><br>
+<div style="margin: 30px;"></div>
 
-# :runner: Getting Started
+# Getting Started
 
 ### **1. Clone repository**
 
@@ -48,9 +53,9 @@
 ### **3. Run project**
 
 ```npm start```
-<br><br>
+<div style="margin: 30px;"></div>
 
-# :memo: License
+# License
 
 This project is protected by the MIT license. See the file [LICENSE](/LICENSE) for more details.
 <br><br>
