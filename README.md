@@ -1,6 +1,6 @@
 <div align="center">
     <img alt="Personagem" src=".github/chef.png" height="200px" /><br><br>
-    <img alt="Logo" src=".github/logo.png" width="91px" /><br>
+    <img alt="Logo" src=".github/logo.png" width="91px" /><br><br>
     
 [![GitHub](https://img.shields.io/github/license/rpradosilva/foodfy?color=d54f44)](/LICENSE)
 
@@ -18,12 +18,14 @@
 
 # :rocket: Features
 
-## Main features
+### Main features
 
 * About page
 * Recipes page
+* Recipe description page
+  * Show/hide sections
 
-## Plus features
+### Plus features
 * Fully **responsive**
 * **Dark mode** theme
 
