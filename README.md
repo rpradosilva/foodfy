@@ -2,6 +2,11 @@
     <img alt="Personagem" src=".github/chef.png" height="200px" /><br><br>
     <img alt="Logo" src=".github/logo.png" width="91px" /><br><br>
     
+[![Proposal](https://img.shields.io/badge/-Proposal-d54f44)](#pushpin-proposal)
+[![Features](https://img.shields.io/badge/-Features-d54f44)](#rocket-features)
+[![Getting-Started](https://img.shields.io/badge/-Getting%20Started-d54f44)](#runner-getting-started)
+<br>
+
 [![GitHub](https://img.shields.io/github/license/rpradosilva/foodfy?color=d54f44)](/LICENSE)
 
 <br>
