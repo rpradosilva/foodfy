@@ -25,6 +25,7 @@
 }
 
 .recipe__infos--title {
+    color: var(--default);
     font-size: var(--xl);
     font-weight: bold;
 }
