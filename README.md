@@ -39,7 +39,7 @@ The project goals learning frontend and backend technologies, like:
 # Features
 
 ### Main features
-- Template structures to pages
+- Template to pages
 - Styling with `CSS grid` and `flexbox`
 - Routes created by the recipe data
 - Show/hide sections in the description recipe page 
