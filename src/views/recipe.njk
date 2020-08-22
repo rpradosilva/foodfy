@@ -6,73 +6,71 @@
 {% endblock %}
 
 {% block content %}
-    <section class="recipe__header">
-        <div class="recipe__banner">
-            <img src="{{ item.image }}" alt="Recipe {{ item.title }}">
+    <div class="content__highlight content__highlight--recipe">
+        <img src="{{ item.image }}" alt="Recipe {{ item.title }}" class="content__highlight-image--recipe">
+    </div>
+    <div class="content__highlight-info--recipe">
+        <h2 class="content__highlight-title content__highlight-title--recipe">{{ item.title }}</h2>
+        <p class="content__highlight-text content__highlight-text--recipe">
+            por
+            {{ item.author }}
+        </p>
+    </div>
+
+    <section class="content__section">
+        <div class="content__section-infos">
+            <h1 class="content__section-title content__section-title--recipe">
+                Ingredientes
+            </h1>
+            <div class="content__section-button">
+                Esconder
+            </div>
         </div>
-        <div class="recipe__infos">
-            <h2 class="recipe__infos--title">{{ item.title }}</h2>
-            <p class="recipe__infos--desc">
-                por
-                {{ item.author }}
-            </p>
+        <div class="content__section-text">
+            <ul class="content__section-list">
+                {% for ingredient in ingredients %}
+                    <li class="content__section-item">
+                        {{ ingredient }}</li>
+                {% endfor %}
+            </ul>
         </div>
-
-        <section class="recipe__section">
-            <div class="recipe__section--header">
-                <h1 class="recipe__section--title">
-                    Ingredientes
-                </h1>
-                <div class="recipe__section--button">
-                    Esconder
-                </div>
-            </div>
-            <div class="recipe__section--text">
-                <ul class="recipe__list">
-                    {% for ingredient in ingredients %}
-                        <li class="recipe__list--item">
-                            {{ ingredient }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </section>
-
-        <section class="recipe__section">
-            <div class="recipe__section--header">
-                <h1 class="recipe__section--title">
-                    Modo de preparo
-                </h1>
-                <div class="recipe__section--button">
-                    Esconder
-                </div>
-            </div>
-            <div class="recipe__section--text">
-                <ol class="recipe__list--ol">
-                    {% for preparation in preparations %}
-                        <li class="recipe__list--step">
-                            {{ preparation }}</li>
-                    {% endfor %}
-                </ol>
-            </div>
-        </section>
-
-        {% if item.information %}
-            <section class="recipe__section">
-                <div class="recipe__section--header">
-                    <h1 class="recipe__section--title">
-                        Informações adicionais
-                    </h1>
-                    <div class="recipe__section--button">
-                        Esconder
-                    </div>
-                </div>
-                <div class="recipe__section--text">
-                    {{ item.information }}
-                </div>
-            </section>
-        {% endif %}
-
     </section>
+
+    <section class="content__section">
+        <div class="content__section-infos">
+            <h1 class="content__section-title content__section-title--recipe">
+                Modo de preparo
+            </h1>
+            <div class="content__section-button">
+                Esconder
+            </div>
+        </div>
+        <div class="content__section-text">
+            <ol class="content__section-list--ordered">
+                {% for preparation in preparations %}
+                    <li class="content__section-item--ordered">
+                        {{ preparation }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </section>
+
+    {% if item.information %}
+        <section class="content__section">
+            <div class="content__section-infos">
+                <h1 class="content__section-title content__section-title--recipe">
+                    Informações adicionais
+                </h1>
+                <div class="content__section-button">
+                    Esconder
+                </div>
+            </div>
+            <div class="content__section-text">
+                {{ item.information }}
+            </div>
+        </section>
+    {% endif %}
+
 {% endblock %}
 {% block scripts %}
     <script src="/scripts/hide.js"></script>

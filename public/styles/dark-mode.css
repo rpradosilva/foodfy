@@ -1,4 +1,4 @@
-.dark {
+.dark-mode {
     --highlight: hsla(0, 0%, 20%, .5);
     --default: hsl(0, 0%, 100%);
     --default-40: hsl(0, 0%, 60%);
@@ -7,15 +7,15 @@
     --default-100: hsl(0, 0%, 0%);
 }
 
-.dark img {
+.dark-mode img {
     filter: grayscale(30%);
 }
 
-.dark .navbar-logo__image {
+.dark-mode .navbar__logo-image {
     filter: invert(100%);
 }
 
-.navbar-theme {
+.navbar__nav-item--theme {
     background: var(--default-40);
     border-top-right-radius: var(--sm);
     border-bottom-right-radius: var(--sm);

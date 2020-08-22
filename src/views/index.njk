@@ -1,31 +1,31 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-    <section class="banner">
-        <div class="banner-text">
-            <h1 class="banner-text__title">
+    <section class="content__highlight">
+        <div class="content__highlight-info">
+            <h1 class="content__highlight-title">
                 As melhores receitas
             </h1>
-            <p class="banner-text__desc">
+            <p class="content__highlight-text">
                 Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
             </p>
         </div>
-        <div class="banner__image">
+        <div class="content__highlight-image">
             <img src="/assets/chef.png" alt="Foodfy Chefs">
         </div>
     </section>
-    <section class="home-recipes">
-        <h1 class="home-recipes__title">
+    <section class="content__section">
+        <h1 class="content__section-title">
             Mais acessadas
         </h1>
-        <div class="home-recipes__grid">
+        <div class="content__section-cards">
             {% for item in range(0, 6) %}
-                <div class="recipe__card">
-                    <div class="recipe__image">
+                <div class="card">
+                    <div class="card__image">
                         <img src="{{ items[item].image }}" alt="Recipe {{ items[item].title }}">
                     </div>
-                    <h2 class="recipe__title">{{ items[item].title }}</h2>
-                    <p class="recipe__desc">
+                    <h2 class="card__title">{{ items[item].title }}</h2>
+                    <p class="card__text">
                         por
                         {{ items[item].author }}
                     </p>

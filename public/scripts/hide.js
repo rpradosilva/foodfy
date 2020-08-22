@@ -1,8 +1,8 @@
-const contents = document.querySelectorAll(".recipe__section")
+const contents = document.querySelectorAll(".content__section")
 
 for (let content of contents) {
-    const hideButton = content.querySelector(".recipe__section--button")
-    const hideContent = content.querySelector(".recipe__section--text")
+    const hideButton = content.querySelector(".content__section-button")
+    const hideContent = content.querySelector(".content__section-text")
 
     hideButton.addEventListener("click", () => {
         if (hideButton.textContent == "Mostrar") {
@@ -10,6 +10,6 @@ for (let content of contents) {
         } else {
             hideButton.textContent = "Mostrar"
         }
-        hideContent.classList.toggle("recipe__section--hide")
+        hideContent.classList.toggle("content__section--hide")
     })
 }

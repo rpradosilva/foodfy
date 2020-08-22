@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import "reset.css";
 @import "fontawesome.css";
-@import "nav.css";
+@import "reset.css";
 @import "dark-mode.css";
+@import "navbar.css";
+@import "footer.css";
+@import "sections.css";
 @import "card.css";
-@import "home.css";
-@import "about.css";
-@import "recipes.css";
-@import "recipe.css";
 :root {
     --highlight: hsl(5, 80%, 92%);
     --default: hsl(0, 0%, 7%);
@@ -15,15 +13,11 @@
     --default-60: hsl(0, 0%, 60%);
     --default-80: hsl(0, 0%, 80%);
     --default-100: hsl(0, 0%, 100%);
-    --modal: #ffffff;
-    --modal-overlay: rgba(0, 0, 0, .7);
-    --modal-close: hsl(5, 80%, 92%);
-    --modal-close-btn: hsl(5, 80%, 72%);
     --xs: 4px;
     --sm: 8px;
     --md: 16px;
     --lg: 24px;
-    --xl: 36px;
+    --xl: 32px;
     --wrapper: 940px;
 }
 
@@ -37,15 +31,4 @@ body {
     margin: 0 auto;
     max-width: var(--wrapper);
     justify-content: space-between;
-}
-
-.footer {
-    background: var(--default-80);
-    padding: var(--lg);
-}
-
-.footer__copy {
-    color: var(--default-40);
-    font-size: calc(var(--md) / 1.2);
-    text-align: center;
 }

@@ -1,6 +1,6 @@
-const navToggleButton = document.querySelector(".nav-toggle__item")
-const navToggleIcon = document.querySelector(".nav-toggle__link i")
-const navbar = document.querySelector(".nav__group")
+const navToggleButton = document.querySelector(".navbar__nav-item--mobile")
+const navToggleIcon = document.querySelector(".navbar__nav-link--mobile i")
+const navbar = document.querySelector(".navbar__nav-list")
 
 navToggleButton.addEventListener("click", () => {
     if (navbar.style.display === "none" || navbar.style.display === "") {

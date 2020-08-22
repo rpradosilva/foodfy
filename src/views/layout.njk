@@ -12,36 +12,36 @@
     </head>
     <body>
         <header class="navbar">
-            <div class="navbar-logo">
-                <a href="/" class="navbar-logo__link">
-                    <img src="/assets/logo.png" alt="Logo Foodfy" class="navbar-logo__image">
+            <div class="navbar__logo">
+                <a href="/" class="navbar__logo-link">
+                    <img src="/assets/logo.png" alt="Logo Foodfy" class="navbar__logo-image">
                 </a>
             </div>
-            <nav class="nav">
-                <div class="nav-toggle__item">
-                    <a class="nav-toggle__link">
-                        <i class="fas fa-angle-down"></i>
-                    </a>
-                </div>
-                <ul class="nav__group">
-                    <li class="nav__item">
+            <nav class="navbar__nav">
+                <ul class="navbar__nav-list">
+                    <li class="navbar__nav-item">
                         {% if pageId == "about" %}
-                            <a href="/about" class="nav__link nav__link__active">Sobre</a>
+                            <a href="/about" class="navbar__nav-link navbar__nav-link--active">Sobre</a>
                         {% else %}
-                            <a href="/about" class="nav__link">Sobre</a>
+                            <a href="/about" class="navbar__nav-link">Sobre</a>
                         {% endif %}
                     </li>
-                    <li class="nav__item">
+                    <li class="navbar__nav-item">
                         {% if pageId == "recipes" %}
-                            <a href="/recipes" class="nav__link nav__link__active">Receitas</a>
+                            <a href="/recipes" class="navbar__nav-link navbar__nav-link--active">Receitas</a>
                         {% else %}
-                            <a href="/recipes" class="nav__link">Receitas</a>
+                            <a href="/recipes" class="navbar__nav-link">Receitas</a>
                         {% endif %}
                     </li>
                 </ul>
+                <div class="navbar__nav-item--mobile">
+                    <a class="navbar__nav-link--mobile">
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                </div>
             </nav>
-            <div class="navbar-theme">
-                <a class="navbar-theme__link">
+            <div class="navbar__nav-item--theme">
+                <a class="navbar__nav-link--theme">
                     <i class="fas fa-adjust"></i>
                 </a>
             </div>
@@ -52,9 +52,10 @@
         </main>
 
         <footer class="footer">
-            <p class="footer__copy">Todos direitos reservados, receitas Foodfy.</p>
+            <p class="footer__text">Todos direitos reservados, receitas Foodfy.</p>
         </footer>
-        <script src="/scripts/nav.js"></script>
+
+        <script src="/scripts/navbar.js"></script>
         <script src="/scripts/theme.js"></script>
         {% block scripts %}{% endblock %}
     </body>

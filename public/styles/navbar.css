@@ -6,33 +6,29 @@
     padding: var(--xl) var(--lg);
 }
 
-.navbar-logo {
+.navbar__logo {
     margin: 0 var(--xl) 0 0;
 }
 
-.navbar-logo__link {
+.navbar__logo-link {
     display: block;
 }
 
-.navbar-logo__image {
+.navbar__logo-image {
     cursor: pointer;
     max-width: 90px;
 }
 
-.nav {
+.navbar__nav {
     display: flex;
 }
 
-.nav__group {
+.navbar__nav-list {
     align-items: center;
     display: flex;
 }
 
-.nav-toggle__item {
-    display: none;
-}
-
-.nav__link {
+.navbar__nav-link {
     background: transparent;
     border: calc(var(--xs) / 4) dashed var(--default-60);
     border-radius: var(--xs);
@@ -44,8 +40,25 @@
     margin: 0 var(--sm);
 }
 
-.nav-toggle__link,
-.nav-toggle__link::before {
+.navbar__nav-link:hover {
+    background: var(--highlight);
+    border: calc(var(--xs) / 4) solid var(--highlight);
+    color: var(--default);
+    transition: 250ms;
+}
+
+.navbar__nav-link--active {
+    background: var(--highlight);
+    border: calc(var(--xs) / 4) solid var(--highlight);
+    color: var(--default);
+}
+
+.navbar__nav-item--mobile {
+    display: none;
+}
+
+.navbar__nav-link--mobile,
+.navbar__nav-link--mobile::before {
     background: transparent;
     color: var(--default);
     cursor: pointer;
@@ -54,51 +67,24 @@
     text-align: center;
 }
 
-.nav__link:hover {
-    background: var(--highlight);
-    border: calc(var(--xs) / 4) solid var(--highlight);
-    color: var(--default);
-    transition: 250ms;
-}
-
-.nav__link__active {
-    background: var(--highlight);
-    border: calc(var(--xs) / 4) solid var(--highlight);
-    color: var(--default);
-}
-
 @media (max-width: 1000px) {
-    .banner {
-        flex-direction: column;
-        margin: 0 var(--md);
-        padding: var(--xl);
-    }
-    .banner-text {
-        text-align: center;
-    }
-    .banner__image {
-        align-self: center;
-        margin: var(--md) 0 0 0;
-    }
-    .home-recipes {
-        margin: var(--xl) var(--md) calc(var(--xl) * 2) var(--md);
-    }
     .navbar {
         padding: var(--md) var(--lg);
         flex-direction: column;
     }
-    .navbar-logo {
+    .navbar__logo {
         margin: var(--sm) 0 0 0;
     }
-    .nav {
+    .navbar__nav {
         align-items: center;
         flex-direction: column;
         justify-content: center;
     }
-    .nav__group {
+    .navbar__nav-list {
+        padding: var(--md);
         display: none;
     }
-    .nav-toggle__item {
+    .navbar__nav-item--mobile {
         display: flex;
     }
 }
