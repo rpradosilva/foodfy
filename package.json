@@ -2,10 +2,10 @@
     "name": "foodfy",
     "version": "1.0.0",
     "description": "Foodfy website, a culinary recipe company.",
-    "main": "server.js",
+    "main": "src/server.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "nodemon server.js"
+        "start": "nodemon src/server.js"
     },
     "repository": {
         "type": "git",
