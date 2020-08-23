@@ -129,7 +129,7 @@
 }
 
 .content__section-item--ordered::before {
-    content: counter(li);
+    content: counter(li)'.';
     font-size: var(--md);
 }
 
