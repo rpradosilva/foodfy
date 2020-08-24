@@ -82,4 +82,4 @@ This project is protected by the MIT license. See the file [LICENSE](/LICENSE) f
 
 ---
 
-### **Developed by** [<img alt="Logo RPrado" src=".github/logo-rprado.png" width="91px" />](http://rprado.design)
+### **Developed by** [<img alt="Logo RPrado" src="https://raw.githubusercontent.com/rpradosilva/rpradosilva/master/.github/logo-rprado.png" width="91px" />](http://rprado.design)
