@@ -16,7 +16,7 @@
 <br>
 
 [![](https://img.shields.io/badge/-License-333333)](/LICENSE)
-[![](https://img.shields.io/badge/-Sugestions-333333)](/issues/new/choose)
+[![](https://img.shields.io/badge/-Sugestions-333333)](https://github.com/rpradosilva/foodfy/issues/new/choose)
 
 </div>
 <img width="100%" src=".github/assets/images/screen.png" align="center" alt="Project screen" />
