@@ -1,25 +1,32 @@
+<p align="center">
+    <img width="130px" src=".github/assets/images/logo.png" align="center" alt="Repo Logo" />
+    <h2 align="center">
+        Foodfy
+    </h2>
+    <p align="center">
+        Foodfy website, a culinary recipe company.
+    </p>
+</p>
+
 <div align="center">
 
-  <img alt="Personagem" src=".github/chef.png" height="200px" />
-  <br><br>
+[![](https://img.shields.io/badge/-About-d54f44)](#about-the-project)
+[![](https://img.shields.io/badge/-Features-d54f44)](#features)
+[![](https://img.shields.io/badge/-Getting%20Started-d54f44)](#getting-started)
+<br>
 
-  <img alt="Logo" src=".github/logo.png" width="91px" />
-  
-  ___
-  <div style="margin: 12px;"></div>
+[![](https://img.shields.io/badge/-License-333333)](/LICENSE)
+[![](https://img.shields.io/badge/-Sugestions-333333)](/issues/new/choose)
 
-  [![About-the-project](https://img.shields.io/badge/-▶%20About-d54f44)](#about-the-project)
-  [![Features](https://img.shields.io/badge/-▶%20Features-d54f44)](#features)
-  [![Getting-Started](https://img.shields.io/badge/-▶%20Getting%20Started-d54f44)](#getting-started)
-  ___
-
-  <div style="margin: 30px;"></div>
-  
-</div>  
+</div>
+<img width="100%" src=".github/assets/images/screen.png" align="center" alt="Project screen" />
 
 # About The Project
+
 ### Create a **culinary recipe website**.
+
 The project goals learning frontend and backend technologies, like:
+
 - **Frontend**
   - HTML
   - CSS
@@ -27,24 +34,22 @@ The project goals learning frontend and backend technologies, like:
 - **Backend**
   - NodeJs
   - NPM
-  - Create server (*Express*)
+  - Create server (_Express_)
     - Use routes
     - Use dynamic data
-  - Template Engine (*Nunjucks*)
-
-<div align="center">
-    <img src=".github/print.png" width="100%" />
-</div>
+  - Template Engine (_Nunjucks_)
 
 # Features
 
 ### Main features
+
 - Template to pages
 - Styling with `CSS grid` and `flexbox`
 - Routes created by the recipe data
-- Show/hide sections in the description recipe page 
+- Show/hide sections in the description recipe page
 
 ### Plus features
+
 - Styling CSS with `BEM CSS` convention
 - Fully **responsive** layout
 - **Dark mode**
@@ -53,22 +58,22 @@ The project goals learning frontend and backend technologies, like:
 # Getting Started
 
 ### Prerequisites
+
 The [NodeJS](https://nodejs.org/) is **required** to be able to run this project. Install in your machine and go to the next steps.
 
 ### Installation
 
 **1.** Clone repository
 
-```git clone git@github.com:rpradosilva/foodfy.git```
+`git clone git@github.com:rpradosilva/foodfy.git`
 
 **2.** Install NPM Packages
 
-```npm install```
+`npm install`
 
 **3.** Run project
 
-```npm start```
-
+`npm start`
 
 <div style="margin: 30px;"></div>
 
@@ -76,9 +81,6 @@ The [NodeJS](https://nodejs.org/) is **required** to be able to run this project
 
 This project is protected by the MIT license. See the file [LICENSE](/LICENSE) for more details.
 <br>
-
-[![GitHub](https://img.shields.io/github/license/rpradosilva/foodfy?color=lightgrey)](/LICENSE)
-<div style="margin: 30px;"></div>
 
 ---
 
