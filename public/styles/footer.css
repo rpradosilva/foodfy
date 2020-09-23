@@ -1,10 +1,11 @@
 .footer {
-    background: var(--default-80);
-    padding: var(--lg);
+  background: var(--default-80);
+  padding: var(--lg);
+  margin-top: auto;
 }
 
 .footer__text {
-    color: var(--default-40);
-    font-size: calc(var(--md) / 1.2);
-    text-align: center;
+  color: var(--default-40);
+  font-size: calc(var(--md) / 1.2);
+  text-align: center;
 }

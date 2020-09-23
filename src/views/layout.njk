@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Seu site de receitas">
-        <link rel="stylesheet" href="/styles/main.css">
-        <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-        {% block title %}
-            <title>Foodfy</title>
-        {% endblock %}
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seu site de receitas">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    {% block title %}
+    <title>Foodfy</title>
+    {% endblock %}
+</head>
+
+<body>
+    <div class="wrapper">
         <header class="navbar">
             <div class="navbar__logo">
                 <a href="/" class="navbar__logo-link">
@@ -21,16 +24,16 @@
                 <ul class="navbar__nav-list">
                     <li class="navbar__nav-item">
                         {% if pageId == "about" %}
-                            <a href="/about" class="navbar__nav-link navbar__nav-link--active">Sobre</a>
+                        <a href="/about" class="navbar__nav-link navbar__nav-link--active">Sobre</a>
                         {% else %}
-                            <a href="/about" class="navbar__nav-link">Sobre</a>
+                        <a href="/about" class="navbar__nav-link">Sobre</a>
                         {% endif %}
                     </li>
                     <li class="navbar__nav-item">
                         {% if pageId == "recipes" %}
-                            <a href="/recipes" class="navbar__nav-link navbar__nav-link--active">Receitas</a>
+                        <a href="/recipes" class="navbar__nav-link navbar__nav-link--active">Receitas</a>
                         {% else %}
-                            <a href="/recipes" class="navbar__nav-link">Receitas</a>
+                        <a href="/recipes" class="navbar__nav-link">Receitas</a>
                         {% endif %}
                     </li>
                 </ul>
@@ -54,9 +57,10 @@
         <footer class="footer">
             <p class="footer__text">Todos direitos reservados, receitas Foodfy.</p>
         </footer>
+    </div>
+    <script src="/scripts/navbar.js"></script>
+    <script src="/scripts/theme.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
 
-        <script src="/scripts/navbar.js"></script>
-        <script src="/scripts/theme.js"></script>
-        {% block scripts %}{% endblock %}
-    </body>
 </html>
