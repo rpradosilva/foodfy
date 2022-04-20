@@ -69,7 +69,7 @@ The [NodeJS](https://nodejs.org/) is **required** to be able to run this project
 
 **2.** Install NPM Packages
 
-`npm install`
+`npm i`
 
 **3.** Run project
 
