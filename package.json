@@ -23,7 +23,7 @@
     },
     "homepage": "https://github.com/rpradosilva/foodfy#readme",
     "dependencies": {
-        "express": "^4.17.3",
+        "express": "^4.19.2",
         "nunjucks": "^3.2.4"
     },
     "devDependencies": {
